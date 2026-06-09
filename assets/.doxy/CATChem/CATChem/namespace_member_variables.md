@@ -74,7 +74,7 @@
 * **diag\_real\_scalar** ([**diagnosticinterface\_mod**](namespacediagnosticinterface__mod.md))
 * **drycoeff** ([**drydepscheme\_wesely\_mod**](namespacedrydepscheme__wesely__mod.md))
 * **dmid** ([**drydepscheme\_zhang\_mod**](namespacedrydepscheme__zhang__mod.md))
-* **default\_scaling** ([**seasaltscheme\_geos12\_mod**](namespaceseasaltscheme__geos12__mod.md), [**seasaltscheme\_gong03\_mod**](namespaceseasaltscheme__gong03__mod.md), [**seasaltscheme\_gong97\_mod**](namespaceseasaltscheme__gong97__mod.md))
+* **default\_scaling** ([**gaschemscheme\_musica\_mod**](namespacegaschemscheme__musica__mod.md), [**seasaltscheme\_geos12\_mod**](namespaceseasaltscheme__geos12__mod.md), [**seasaltscheme\_gong03\_mod**](namespaceseasaltscheme__gong03__mod.md), [**seasaltscheme\_gong97\_mod**](namespaceseasaltscheme__gong97__mod.md))
 * **density\_ice** ([**wetdepscheme\_jacob\_mod**](namespacewetdepscheme__jacob__mod.md))
 * **density\_liq** ([**wetdepscheme\_jacob\_mod**](namespacewetdepscheme__jacob__mod.md))
 
@@ -279,10 +279,10 @@
 ## t
 
 * **two\_thirds** ([**drydepscheme\_wesely\_mod**](namespacedrydepscheme__wesely__mod.md), [**drydepscheme\_zhang\_mod**](namespacedrydepscheme__zhang__mod.md))
+* **t\_standard** ([**gaschemscheme\_musica\_mod**](namespacegaschemscheme__musica__mod.md), [**seasaltscheme\_geos12\_mod**](namespaceseasaltscheme__geos12__mod.md), [**seasaltscheme\_gong03\_mod**](namespaceseasaltscheme__gong03__mod.md), [**seasaltscheme\_gong97\_mod**](namespaceseasaltscheme__gong97__mod.md))
 * **tiny\_** ([**precision\_mod**](namespaceprecision__mod.md))
 * **tiny\_dble** ([**precision\_mod**](namespaceprecision__mod.md))
 * **tiny\_real** ([**precision\_mod**](namespaceprecision__mod.md))
-* **t\_standard** ([**seasaltscheme\_geos12\_mod**](namespaceseasaltscheme__geos12__mod.md), [**seasaltscheme\_gong03\_mod**](namespaceseasaltscheme__gong03__mod.md), [**seasaltscheme\_gong97\_mod**](namespaceseasaltscheme__gong97__mod.md))
 * **ton\_to\_kg** ([**unitconversion\_mod**](namespaceunitconversion__mod.md))
 
 

@@ -30,6 +30,9 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
 * **namespace** [**error\_mod**](namespaceerror__mod.md)     
 * **namespace** [**extemisdata\_mod**](namespaceextemisdata__mod.md)     
 * **namespace** [**fieldmapping\_mod**](namespacefieldmapping__mod.md)     
+* **namespace** [**gaschemcommon\_mod**](namespacegaschemcommon__mod.md)     
+* **namespace** [**gaschemprocesscreator\_mod**](namespacegaschemprocesscreator__mod.md)     
+* **namespace** [**gaschemscheme\_musica\_mod**](namespacegaschemscheme__musica__mod.md)     
 * **namespace** [**gridgeometry\_mod**](namespacegridgeometry__mod.md)     
 * **namespace** [**gridmanager\_mod**](namespacegridmanager__mod.md)     
 * **namespace** [**ieee\_arithmetic**](namespaceieee__arithmetic.md) 
@@ -42,6 +45,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
 * **namespace** [**processcarbcheminterface\_mod**](namespaceprocesscarbcheminterface__mod.md) _Process for computing chemical production and loss of carbon species._     
 * **namespace** [**processdrydepinterface\_mod**](namespaceprocessdrydepinterface__mod.md) _Process for computing dry deposition of gas and aerosol species._     
 * **namespace** [**processfactory\_mod**](namespaceprocessfactory__mod.md)     
+* **namespace** [**processgascheminterface\_mod**](namespaceprocessgascheminterface__mod.md) _Process for MICM gas phase chemical solver._     
 * **namespace** [**processinterface\_mod**](namespaceprocessinterface__mod.md)     
     * **interface** [**init\_interface**](interfaceprocessinterface__mod_1_1init__interface.md) _Initialize the process with given container._     
 * **interface** [**column\_finalize\_interface**](interfaceprocessinterface__mod_1_1column__finalize__interface.md) _Finalize column processing._     

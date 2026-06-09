@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_2a332609ebf1b4c61e55d9d1fdc7835b" kind="dir">
+    <compoundname>src/process/GasChem</compoundname>
+    <innerdir refid="dir_7c83ade1eb3e26974b95c79da619e542">src/process/GasChem/schemes</innerdir>
+    <innerfile refid="_gas_chem_common___mod_8_f90">GasChemCommon_Mod.F90</innerfile>
+    <innerfile refid="_gas_chem_process_creator___mod_8_f90">GasChemProcessCreator_Mod.F90</innerfile>
+    <innerfile refid="_process_gas_chem_interface___mod_8_f90">ProcessGasChemInterface_Mod.F90</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/process/GasChem/"/>
+  </compounddef>
+</doxygen>

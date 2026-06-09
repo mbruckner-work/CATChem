@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structgaschemcommon__mod_1_1gaschemprocessconfig" kind="type" language="Fortran" prot="public">
+    <compoundname>gaschemcommon_mod::gaschemprocessconfig</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a55ecc0240f4ced777c8a1f621e06e4b0" prot="public" static="no" mutable="no">
+        <type>character(len=64)</type>
+        <definition>character(len=64) gaschemcommon_mod::gaschemprocessconfig::process_name</definition>
+        <argsstring></argsstring>
+        <name>process_name</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::process_name</qualifiedname>
+        <initializer>= &apos;GasChem&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="96" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a05928cad8c5ea29e6938b9d3b718c4c3" prot="public" static="no" mutable="no">
+        <type>character(len=16)</type>
+        <definition>character(len=16) gaschemcommon_mod::gaschemprocessconfig::process_version</definition>
+        <argsstring></argsstring>
+        <name>process_version</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::process_version</qualifiedname>
+        <initializer>= &apos;1.0.0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="97" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a2d4f5a064d266c2bb4f76db3ed193567" prot="public" static="no" mutable="no">
+        <type>logical</type>
+        <definition>logical gaschemcommon_mod::gaschemprocessconfig::is_active</definition>
+        <argsstring></argsstring>
+        <name>is_active</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::is_active</qualifiedname>
+        <initializer>= .true.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="98" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7727431b3ef46a5fa28a75ca758c9c7d" prot="public" static="no" mutable="no">
+        <type>type(<ref refid="structgaschemcommon__mod_1_1gaschemconfig" kindref="compound">gaschemconfig</ref>)</type>
+        <definition>type(gaschemconfig) gaschemcommon_mod::gaschemprocessconfig::gaschem_config</definition>
+        <argsstring></argsstring>
+        <name>gaschem_config</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::gaschem_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="101" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a626e3279ca4b566df8e9f384bc1bac54" prot="public" static="no" mutable="no">
+        <type>type(<ref refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kindref="compound">gaschemschememusicaconfig</ref>)</type>
+        <definition>type(gaschemschememusicaconfig) gaschemcommon_mod::gaschemprocessconfig::no_phot_config</definition>
+        <argsstring></argsstring>
+        <name>no_phot_config</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::no_phot_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="104" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="104" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7b7f605459bdc4288d1b88598c0cba63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::load_from_config</definition>
+        <argsstring>(this, config_manager, error_handler)</argsstring>
+        <name>load_from_config</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::load_from_config</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structconfigmanager__mod_1_1configmanagertype" kindref="compound">configmanagertype</ref>), intent(inout)</type>
+          <defname>config_manager</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Load unified process configuration from ConfigManager This is the main function that ProcessInterface.parse_process_config should call Process reads its configuration directly from the master YAML via ConfigManager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="108" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1ad940e81e2b5781478a0d0b1bb9492e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::load_species_from_chem_state</definition>
+        <argsstring>(this, chem_state, error_handler)</argsstring>
+        <name>load_species_from_chem_state</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::load_species_from_chem_state</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structchemstate__mod_1_1chemstatetype" kindref="compound">chemstatetype</ref>), intent(in), pointer</type>
+          <defname>chem_state</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Load species from ChemState This function is used for dynamic species discovery (by_metadata or all_species) For &apos;all_species&apos; mode: loads all species using nSpecies and SpeciesIndex For &apos;by_metadata&apos; mode: loads species by type using nSpeciesGasChem and GasChemIndex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="109" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a3c8605441c64b1461c7ba6444ec4e498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::validate</definition>
+        <argsstring>(this, state_manager, error_handler)</argsstring>
+        <name>validate</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::validate</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structstatemanager__mod_1_1statemanagertype" kindref="compound">statemanagertype</ref>), intent(in)</type>
+          <defname>state_manager</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Validate unified process configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="110" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1aa7cdfa4a9f626250f6190911b194ff25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::finalize</definition>
+        <argsstring>(this)</argsstring>
+        <name>finalize</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::finalize</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <briefdescription>
+<para>Finalize unified process configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="111" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a4d03652fea70bee9a9b8861308162aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::get_active_scheme_config</definition>
+        <argsstring>(this)</argsstring>
+        <name>get_active_scheme_config</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::get_active_scheme_config</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(in)</type>
+          <defname>this</defname>
+        </param>
+        <briefdescription>
+<para>Get active scheme configuration (polymorphic return) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="112" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a35d350d3ae8aa5a9911707a1860a4912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::load_no_phot_config</definition>
+        <argsstring>(this, config_manager, error_handler)</argsstring>
+        <name>load_no_phot_config</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::load_no_phot_config</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structconfigmanager__mod_1_1configmanagertype" kindref="compound">configmanagertype</ref>), intent(inout)</type>
+          <defname>config_manager</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Load no_phot scheme configuration from master YAML. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="113" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemprocessconfig_1a039c5959a61dcb2aadca512255abb0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemprocessconfig::map_diagnostic_species_indices</definition>
+        <argsstring>(this, error_handler)</argsstring>
+        <name>map_diagnostic_species_indices</name>
+        <qualifiedname>gaschemcommon_mod::gaschemprocessconfig::map_diagnostic_species_indices</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kindref="compound">gaschemprocessconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Map diagnostic species names to indices in the species_names array This function creates the diagnostic_species_id array that maps each diagnostic species to its corresponding index in the full species_names array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="114" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Unified process configuration type that bridges ConfigManager and process-specific configs This is the main configuration type that ProcessInterface should use. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>gaschemcommon_mod::gaschemconfig</label>
+        <link refid="structgaschemcommon__mod_1_1gaschemconfig"/>
+      </node>
+      <node id="1">
+        <label>gaschemcommon_mod::gaschemprocessconfig</label>
+        <link refid="structgaschemcommon__mod_1_1gaschemprocessconfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gaschem_config</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>no_phot_config</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gaschemcommon_mod::gaschemschememusicaconfig</label>
+        <link refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="93" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="93" bodyend="115"/>
+    <listofallmembers>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1aa7cdfa4a9f626250f6190911b194ff25" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>finalize</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7727431b3ef46a5fa28a75ca758c9c7d" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>gaschem_config</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a4d03652fea70bee9a9b8861308162aee" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>get_active_scheme_config</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a2d4f5a064d266c2bb4f76db3ed193567" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>is_active</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7b7f605459bdc4288d1b88598c0cba63" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>load_from_config</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a35d350d3ae8aa5a9911707a1860a4912" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>load_no_phot_config</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1ad940e81e2b5781478a0d0b1bb9492e1a" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>load_species_from_chem_state</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a039c5959a61dcb2aadca512255abb0dd" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>map_diagnostic_species_indices</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a626e3279ca4b566df8e9f384bc1bac54" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>no_phot_config</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a55ecc0240f4ced777c8a1f621e06e4b0" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>process_name</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a05928cad8c5ea29e6938b9d3b718c4c3" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>process_version</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a3c8605441c64b1461c7ba6444ec4e498" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemprocessconfig</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

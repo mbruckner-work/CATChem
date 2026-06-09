@@ -1120,6 +1120,50 @@
     <member refid="structcatchemapi__mod_1_1flexibledataexchangetype_1a9b08b7724cb64694e301180bf31cae50" kind="function"><name>set_mapped_field</name></member>
     <member refid="structcatchemapi__mod_1_1flexibledataexchangetype_1aefa71379acc862a91369833ae10d39b9" kind="function"><name>validate_mappings</name></member>
   </compound>
+  <compound refid="structgaschemcommon__mod_1_1gaschemconfig" kind="type"><name>gaschemcommon_mod::gaschemconfig</name>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a63009fdcd1002333e7f66b92ba060b65" kind="variable"><name>scheme</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ac754ae3fb74fa7f31075a6dd4913a677" kind="variable"><name>is_active</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a1a990e0cbbc6136401d71521ded445ec" kind="variable"><name>diagnostics</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a08b4bb5209e53b270b44a0ef1123fa55" kind="variable"><name>n_diagnostic_species</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1afd5576a682cd3c98022a6581f4f09138" kind="variable"><name>diagnostic_species</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1aafbb254124369ca4bbc87530a3bdefa7" kind="variable"><name>diagnostic_species_id</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a7d79f4f3152c4a0663e4039d59230c52" kind="variable"><name>dt_min</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1af4296cb3278247df9f43610df73ce84c" kind="variable"><name>dt_max</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ab9c9cf14094a76a3a55edb60048cd239" kind="variable"><name>n_species</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ae7fa0aad95a5008cf56f1be0cd2c3aed" kind="variable"><name>species_names</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a9fce9affbbcd4b2c6d85a92dd974f0e9" kind="variable"><name>species_indices</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a26ae4af402614426cea20b0ca6b53457" kind="variable"><name>output_diagnostics</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a66ef9a7ecf367239f7e0cfc41c8cd4cb" kind="variable"><name>diagnostic_frequency</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ad0c221e9dc0d87ca6bc6cde403b7b03f" kind="function"><name>validate</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a8991840f78b7e26397207eeba518b96b" kind="function"><name>finalize</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a9badde53a93c8f1adab83c8f090fd93d" kind="function"><name>print_summary</name></member>
+  </compound>
+  <compound refid="structgaschemcommon__mod_1_1gaschemprocessconfig" kind="type"><name>gaschemcommon_mod::gaschemprocessconfig</name>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a55ecc0240f4ced777c8a1f621e06e4b0" kind="variable"><name>process_name</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a05928cad8c5ea29e6938b9d3b718c4c3" kind="variable"><name>process_version</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a2d4f5a064d266c2bb4f76db3ed193567" kind="variable"><name>is_active</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7727431b3ef46a5fa28a75ca758c9c7d" kind="variable"><name>gaschem_config</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a626e3279ca4b566df8e9f384bc1bac54" kind="variable"><name>no_phot_config</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a7b7f605459bdc4288d1b88598c0cba63" kind="function"><name>load_from_config</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1ad940e81e2b5781478a0d0b1bb9492e1a" kind="function"><name>load_species_from_chem_state</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a3c8605441c64b1461c7ba6444ec4e498" kind="function"><name>validate</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1aa7cdfa4a9f626250f6190911b194ff25" kind="function"><name>finalize</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a4d03652fea70bee9a9b8861308162aee" kind="function"><name>get_active_scheme_config</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a35d350d3ae8aa5a9911707a1860a4912" kind="function"><name>load_no_phot_config</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemprocessconfig_1a039c5959a61dcb2aadca512255abb0dd" kind="function"><name>map_diagnostic_species_indices</name></member>
+  </compound>
+  <compound refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kind="type"><name>gaschemcommon_mod::gaschemschememusicaconfig</name>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ac83053f644a844980b510dee0385f819" kind="variable"><name>scheme_name</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1afafe471f4dd4c06aa7b4007decd7ef20" kind="variable"><name>description</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a2df41d277d4b5fd2fa5308b9757689e4" kind="variable"><name>author</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a599fbe2ad380147bd7d761effb25f105" kind="variable"><name>algorithm_type</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a54b1379f92ae45c97a416c86fd8bfd1e" kind="variable"><name>affects_full_column</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a493f7bff6ecc04d3fcdfaeda5e15558e" kind="variable"><name>mechanism</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ab8e368fb152fb8f7c65af7cc14683e67" kind="variable"><name>n_required_met_fields</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a4700c075427af27e174bb42bfb04c99f" kind="variable"><name>required_met_fields</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1aae7439088326c033b8b3e6868319dbd0" kind="function"><name>validate</name></member>
+    <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1af51af7aa732f60008577b875bf81ac0e" kind="function"><name>finalize</name></member>
+  </compound>
   <compound refid="interfaceprocessinterface__mod_1_1get__required__met__fields__interface" kind="interface"><name>processinterface_mod::get_required_met_fields_interface</name>
     <member refid="interfaceprocessinterface__mod_1_1get__required__met__fields__interface_1a72a055ca60f1cb0177c4eb8e804f64cc" kind="function"><name>get_required_met_fields_interface</name></member>
   </compound>
@@ -1540,6 +1584,30 @@
     <member refid="structprocessfactory__mod_1_1processfactorytype_1a7e9c6338a05fec4cd3a4bf5d937400aa" kind="function"><name>list_available</name></member>
     <member refid="structprocessfactory__mod_1_1processfactorytype_1a931e9d7da92ecb3447b8288589bbf783" kind="function"><name>register_process</name></member>
     <member refid="structprocessfactory__mod_1_1processfactorytype_1a8063d3d8d96d299bc5ab65c2dcb290c6" kind="function"><name>register_builtin_processes</name></member>
+  </compound>
+  <compound refid="structprocessgascheminterface__mod_1_1processgascheminterface" kind="type"><name>processgascheminterface_mod::processgascheminterface</name>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a24964db3b676977f17a43fc86827f945" kind="variable"><name>process_config</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a1de547b1e4d80ed2f932094239e6d93d" kind="variable"><name>chem_state</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a2d0f51cab70a23dc2ba72dd356e637d2" kind="variable"><name>met_state</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a84a6c7a9f9f19be351c05ddfa49214fd" kind="variable"><name>diag_total_rate_per_species_per_level_idx</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1aab858454ec8982c4507031b7029e35ba" kind="variable"><name>column_total_rate_per_species_per_level</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a02d8652ba287a51f27cd0616f8aafd01" kind="variable"><name>column_net_chemical_rate_per_species</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1af04049d1bb4907e2a276788288eeb453" kind="function"><name>init</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a3ba22f772a24a3b1d297b9ed641091ab" kind="function"><name>run</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a67647727789201505011109aed905a7e" kind="function"><name>finalize</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a79b1e3146c910805b6d6e451064e9ea8" kind="function"><name>parse_process_config</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a853a4ee4108061e2c3693e04a5f7e4a8" kind="function"><name>init_column_processing</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1ab6cce296bbdd518153190950fb911e20" kind="function"><name>run_column</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1ae89f23639b30ee93db5b91509df44218" kind="function"><name>finalize_column_processing</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a493fd3712ba8a544725015a7be6da61b" kind="function"><name>get_required_met_fields</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1ac7e151629580beaded53a13cf247be27" kind="function"><name>get_required_diagnostic_fields</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a6f114dfe096b74866caeabda7e0ae607" kind="function"><name>set_scheme</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a95716345a3a6b1cc8caa569037708784" kind="function"><name>get_scheme</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a389d12d131da15c5c008f51035577862" kind="function"><name>register_diagnostics</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1acc9db73e6c6600790de320c1357fb863" kind="function"><name>run_active_scheme_column</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1aad52f057e2ba57f53fc4df35d61be555" kind="function"><name>run_no_phot_scheme_column</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a46da0edf121159def70754cda06ba5e8" kind="function"><name>register_and_allocate_diagnostics</name></member>
+    <member refid="structprocessgascheminterface__mod_1_1processgascheminterface_1a7d9fd880a7d10c45ef142234bd028db4" kind="function"><name>calculate_and_update_diagnostics</name></member>
   </compound>
   <compound refid="structprocessinterface__mod_1_1processinterface" kind="type"><name>processinterface_mod::processinterface</name>
     <member refid="structprocessinterface__mod_1_1processinterface_1a1ce18a0663f48b2d8ddc02f99262fc25" kind="variable"><name>name</name></member>
@@ -2910,6 +2978,31 @@
     <member refid="namespacefieldmapping__mod_1a4b1d036e11379f1be4817c071b6bb6e6" kind="function"><name>mapping_get_stats</name></member>
     <member refid="namespacefieldmapping__mod_1acfd90470e050f589bdc7c2099c640c04" kind="function"><name>is_valid_category</name></member>
   </compound>
+  <compound refid="namespacegaschemcommon__mod" kind="namespace"><name>gaschemcommon_mod</name>
+    <member refid="namespacegaschemcommon__mod_1a412d15bb13202b401f2140a032bca03f" kind="function"><name>validate_gaschem_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1a504898bcca4a093f3c715097fe050084" kind="function"><name>print_gaschem_config_summary</name></member>
+    <member refid="namespacegaschemcommon__mod_1ab5b50840854d2750c75d6b639417eacc" kind="function"><name>finalize_gaschem_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1ad6529795f63b301816b3661535dc09de" kind="function"><name>validate_no_phot_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1a8e984377367d8bb82c2f323629a9237e" kind="function"><name>finalize_no_phot_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1a92bf855ddab64e9e8f2a68572a0f34ef" kind="function"><name>int_to_string</name></member>
+    <member refid="namespacegaschemcommon__mod_1a95a310a422e34fa89d3aea61de4367d1" kind="function"><name>gaschem_process_load_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1a6296679b79b0b52f6d215f0c3a5e3c6d" kind="function"><name>load_species_from_chem_state</name></member>
+    <member refid="namespacegaschemcommon__mod_1a6cb51df8c3e2d35b78e35ab9a649149c" kind="function"><name>load_no_phot_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1a9bde41cebd22a2b9613be561dabea16d" kind="function"><name>gaschem_process_validate</name></member>
+    <member refid="namespacegaschemcommon__mod_1a44dd0ce3954b3193127165c16f68b01f" kind="function"><name>gaschem_process_finalize</name></member>
+    <member refid="namespacegaschemcommon__mod_1ab8a6668dc105d8081c66b528b2579e84" kind="function"><name>get_active_scheme_config</name></member>
+    <member refid="namespacegaschemcommon__mod_1aafef02efca0be97a372d316c39cc7ab4" kind="function"><name>map_diagnostic_species_indices</name></member>
+  </compound>
+  <compound refid="namespacegaschemprocesscreator__mod" kind="namespace"><name>gaschemprocesscreator_mod</name>
+    <member refid="namespacegaschemprocesscreator__mod_1af876441177f4cc201d08114e664491d0" kind="function"><name>create_gaschem_process</name></member>
+    <member refid="namespacegaschemprocesscreator__mod_1a5c2b40fbc0912ad8ad00379d00e2d293" kind="function"><name>register_gaschem_process</name></member>
+    <member refid="namespacegaschemprocesscreator__mod_1aeafa0ad7d4a51765b322b58ecb1aeb6f" kind="function"><name>get_gaschem_default_config</name></member>
+  </compound>
+  <compound refid="namespacegaschemscheme__musica__mod" kind="namespace"><name>gaschemscheme_musica_mod</name>
+    <member refid="namespacegaschemscheme__musica__mod_1af4dc8e963cdb27df3d52a31b52402114" kind="variable"><name>t_standard</name></member>
+    <member refid="namespacegaschemscheme__musica__mod_1a4a8f2b43524d5f8e5968f72943c3908c" kind="variable"><name>default_scaling</name></member>
+    <member refid="namespacegaschemscheme__musica__mod_1ac76bef9734fe3dd23011f4abcbe7198f" kind="function"><name>compute_no_phot</name></member>
+  </compound>
   <compound refid="namespacegridgeometry__mod" kind="namespace"><name>gridgeometry_mod</name>
     <member refid="namespacegridgeometry__mod_1a82bf539a5200fa8ed88bd748ef0413eb" kind="function"><name>get_nx</name></member>
     <member refid="namespacegridgeometry__mod_1a104df3f213f1c9147becad4aa338448a" kind="function"><name>get_ny</name></member>
@@ -3107,6 +3200,23 @@
     <member refid="namespaceprocessfactory__mod_1a2c0702a75de7f38bdc264ad42d6154a8" kind="function"><name>factory_register_process</name></member>
     <member refid="namespaceprocessfactory__mod_1ac0d25458d62c7b1cf0c03071378f02d1" kind="function"><name>register_builtin_processes</name></member>
     <member refid="namespaceprocessfactory__mod_1a2010f166a03f6d272fb5aca7432fb3ce" kind="function"><name>create_process</name></member>
+  </compound>
+  <compound refid="namespaceprocessgascheminterface__mod" kind="namespace"><name>processgascheminterface_mod</name>
+    <member refid="namespaceprocessgascheminterface__mod_1a21730fee40291ac1cfc99649fd72ab4d" kind="function"><name>process_init</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a68ac2e7e9540224d938323005b5a9a56" kind="function"><name>process_run</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a53627abe2a28bd8af9aa45360f753943" kind="function"><name>process_finalize</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1aa9332689b43efa8a0fdcb087baf26f00" kind="function"><name>parse_gaschem_config</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a1c4ab5d7d6cb2df9844a2f3b053f229d" kind="function"><name>init_column_processing</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1aa5bb873eb521e0522743d781b503a35e" kind="function"><name>run_column</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1ac5a141c02622193ce0eea5cd8bbfc72e" kind="function"><name>finalize_column_processing</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a448baae4f5f30a8dacb2fe7e5a4a6bec" kind="function"><name>run_active_scheme_column</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1aaba1bceb1eafc597462320f1c75f34af" kind="function"><name>run_no_phot_scheme_column</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1ab7ca5b8e31ed3f6a3ebe797d04528663" kind="function"><name>get_required_met_fields</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a0ea54ed558f58e9eb8f77a5bf709f35f" kind="function"><name>get_required_diagnostic_fields</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1ab3a454b72fef9dd758814eefa144df68" kind="function"><name>register_and_allocate_diagnostics</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1ae522f083dba3c4c75bd60ebdbe16272b" kind="function"><name>calculate_and_update_diagnostics</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a01994e4c174d8db2d1a23ca731f51853" kind="function"><name>set_gaschem_scheme</name></member>
+    <member refid="namespaceprocessgascheminterface__mod_1a198a35542eef984a0b6e9e6910929807" kind="function"><name>get_gaschem_scheme</name></member>
   </compound>
   <compound refid="namespaceprocessinterface__mod" kind="namespace"><name>processinterface_mod</name>
     <member refid="namespaceprocessinterface__mod_1af99658b8b161cde46b066338e9e4d498" kind="function"><name>process_get_name</name></member>
@@ -3738,6 +3848,14 @@
   </compound>
   <compound refid="_dry_dep_scheme___z_h_a_n_g___mod_8_f90" kind="file"><name>DryDepScheme_ZHANG_Mod.F90</name>
   </compound>
+  <compound refid="_gas_chem_common___mod_8_f90" kind="file"><name>GasChemCommon_Mod.F90</name>
+  </compound>
+  <compound refid="_gas_chem_process_creator___mod_8_f90" kind="file"><name>GasChemProcessCreator_Mod.F90</name>
+  </compound>
+  <compound refid="_process_gas_chem_interface___mod_8_f90" kind="file"><name>ProcessGasChemInterface_Mod.F90</name>
+  </compound>
+  <compound refid="_gas_chem_scheme___m_u_s_i_c_a___mod_8_f90" kind="file"><name>GasChemScheme_MUSICA_Mod.F90</name>
+  </compound>
   <compound refid="_process_sea_salt_interface___mod_8_f90" kind="file"><name>ProcessSeaSaltInterface_Mod.F90</name>
   </compound>
   <compound refid="_sea_salt_scheme___g_e_o_s12___mod_8_f90" kind="file"><name>SeaSaltScheme_GEOS12_Mod.F90</name>
@@ -3827,11 +3945,15 @@
   </compound>
   <compound refid="dir_805a0af995e93a362739e98abd740eb2" kind="dir"><name>src/external</name>
   </compound>
+  <compound refid="dir_2a332609ebf1b4c61e55d9d1fdc7835b" kind="dir"><name>src/process/GasChem</name>
+  </compound>
   <compound refid="dir_c0cd66d8ddae4fc5bc5dc2f24e29763b" kind="dir"><name>src/process</name>
   </compound>
   <compound refid="dir_2aa0506a6ee0350ff25dc7952f19a30f" kind="dir"><name>src/process/carbchem/schemes</name>
   </compound>
   <compound refid="dir_5a3c86e36f17958630366ebc2b7ca21b" kind="dir"><name>src/process/drydep/schemes</name>
+  </compound>
+  <compound refid="dir_7c83ade1eb3e26974b95c79da619e542" kind="dir"><name>src/process/GasChem/schemes</name>
   </compound>
   <compound refid="dir_ec083b49fedbd640552af85049fd7226" kind="dir"><name>src/process/seasalt/schemes</name>
   </compound>

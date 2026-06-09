@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kind="type" language="Fortran" prot="public">
+    <compoundname>gaschemcommon_mod::gaschemschememusicaconfig</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ac83053f644a844980b510dee0385f819" prot="public" static="no" mutable="no">
+        <type>character(len=64)</type>
+        <definition>character(len=64) gaschemcommon_mod::gaschemschememusicaconfig::scheme_name</definition>
+        <argsstring></argsstring>
+        <name>scheme_name</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::scheme_name</qualifiedname>
+        <initializer>= &apos;no_phot&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="68" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1afafe471f4dd4c06aa7b4007decd7ef20" prot="public" static="no" mutable="no">
+        <type>character(len=256)</type>
+        <definition>character(len=256) gaschemcommon_mod::gaschemschememusicaconfig::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::description</qualifiedname>
+        <initializer>= &apos;MICM gas phase chemistry solver without photolysis&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="69" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a2df41d277d4b5fd2fa5308b9757689e4" prot="public" static="no" mutable="no">
+        <type>character(len=64)</type>
+        <definition>character(len=64) gaschemcommon_mod::gaschemschememusicaconfig::author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::author</qualifiedname>
+        <initializer>= &apos;Maggie Bruckner&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="70" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a599fbe2ad380147bd7d761effb25f105" prot="public" static="no" mutable="no">
+        <type>character(len=16)</type>
+        <definition>character(len=16) gaschemcommon_mod::gaschemschememusicaconfig::algorithm_type</definition>
+        <argsstring></argsstring>
+        <name>algorithm_type</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::algorithm_type</qualifiedname>
+        <initializer>= &apos;explicit&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="71" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a54b1379f92ae45c97a416c86fd8bfd1e" prot="public" static="no" mutable="no">
+        <type>logical</type>
+        <definition>logical gaschemcommon_mod::gaschemschememusicaconfig::affects_full_column</definition>
+        <argsstring></argsstring>
+        <name>affects_full_column</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::affects_full_column</qualifiedname>
+        <initializer>= .true.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="74" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a493f7bff6ecc04d3fcdfaeda5e15558e" prot="public" static="no" mutable="no">
+        <type>character(len=256)</type>
+        <definition>character(len=256) gaschemcommon_mod::gaschemschememusicaconfig::mechanism</definition>
+        <argsstring></argsstring>
+        <name>mechanism</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::mechanism</qualifiedname>
+        <initializer>= &quot;mechanism_config.yaml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="77" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ab8e368fb152fb8f7c65af7cc14683e67" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer gaschemcommon_mod::gaschemschememusicaconfig::n_required_met_fields</definition>
+        <argsstring></argsstring>
+        <name>n_required_met_fields</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::n_required_met_fields</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="80" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a4700c075427af27e174bb42bfb04c99f" prot="public" static="no" mutable="no">
+        <type>character(len=32), dimension(4)</type>
+        <definition>character(len=32), dimension(4) gaschemcommon_mod::gaschemschememusicaconfig::required_met_fields</definition>
+        <argsstring></argsstring>
+        <name>required_met_fields</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::required_met_fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="81" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="81" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1aae7439088326c033b8b3e6868319dbd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemschememusicaconfig::validate</definition>
+        <argsstring>(this, error_handler)</argsstring>
+        <name>validate</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::validate</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kindref="compound">gaschemschememusicaconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Validate no_phot scheme configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="84" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1af51af7aa732f60008577b875bf81ac0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemschememusicaconfig::finalize</definition>
+        <argsstring>(this)</argsstring>
+        <name>finalize</name>
+        <qualifiedname>gaschemcommon_mod::gaschemschememusicaconfig::finalize</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kindref="compound">gaschemschememusicaconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <briefdescription>
+<para>Finalize no_phot scheme configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="85" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration type for no_phot scheme. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="65" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="65" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a54b1379f92ae45c97a416c86fd8bfd1e" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>affects_full_column</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a599fbe2ad380147bd7d761effb25f105" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>algorithm_type</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a2df41d277d4b5fd2fa5308b9757689e4" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>author</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1afafe471f4dd4c06aa7b4007decd7ef20" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>description</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1af51af7aa732f60008577b875bf81ac0e" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>finalize</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a493f7bff6ecc04d3fcdfaeda5e15558e" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>mechanism</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ab8e368fb152fb8f7c65af7cc14683e67" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>n_required_met_fields</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1a4700c075427af27e174bb42bfb04c99f" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>required_met_fields</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1ac83053f644a844980b510dee0385f819" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>scheme_name</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig_1aae7439088326c033b8b3e6868319dbd0" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemschememusicaconfig</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

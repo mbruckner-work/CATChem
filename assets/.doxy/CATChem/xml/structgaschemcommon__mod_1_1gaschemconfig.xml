@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structgaschemcommon__mod_1_1gaschemconfig" kind="type" language="Fortran" prot="public">
+    <compoundname>gaschemcommon_mod::gaschemconfig</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a63009fdcd1002333e7f66b92ba060b65" prot="public" static="no" mutable="no">
+        <type>character(len=32)</type>
+        <definition>character(len=32) gaschemcommon_mod::gaschemconfig::scheme</definition>
+        <argsstring></argsstring>
+        <name>scheme</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::scheme</qualifiedname>
+        <initializer>= &apos;no_phot&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="35" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1ac754ae3fb74fa7f31075a6dd4913a677" prot="public" static="no" mutable="no">
+        <type>logical</type>
+        <definition>logical gaschemcommon_mod::gaschemconfig::is_active</definition>
+        <argsstring></argsstring>
+        <name>is_active</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::is_active</qualifiedname>
+        <initializer>= .true.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="36" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a1a990e0cbbc6136401d71521ded445ec" prot="public" static="no" mutable="no">
+        <type>logical</type>
+        <definition>logical gaschemcommon_mod::gaschemconfig::diagnostics</definition>
+        <argsstring></argsstring>
+        <name>diagnostics</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::diagnostics</qualifiedname>
+        <initializer>= .false.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="37" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a08b4bb5209e53b270b44a0ef1123fa55" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer gaschemcommon_mod::gaschemconfig::n_diagnostic_species</definition>
+        <argsstring></argsstring>
+        <name>n_diagnostic_species</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::n_diagnostic_species</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="40" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1afd5576a682cd3c98022a6581f4f09138" prot="public" static="no" mutable="no">
+        <type>character(len=32), dimension(:), allocatable</type>
+        <definition>character(len=32), dimension(:), allocatable gaschemcommon_mod::gaschemconfig::diagnostic_species</definition>
+        <argsstring></argsstring>
+        <name>diagnostic_species</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::diagnostic_species</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="41" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1aafbb254124369ca4bbc87530a3bdefa7" prot="public" static="no" mutable="no">
+        <type>integer, dimension(:), allocatable</type>
+        <definition>integer, dimension(:), allocatable gaschemcommon_mod::gaschemconfig::diagnostic_species_id</definition>
+        <argsstring></argsstring>
+        <name>diagnostic_species_id</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::diagnostic_species_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="42" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a7d79f4f3152c4a0663e4039d59230c52" prot="public" static="no" mutable="no">
+        <type>real(fp)</type>
+        <definition>real(fp) gaschemcommon_mod::gaschemconfig::dt_min</definition>
+        <argsstring></argsstring>
+        <name>dt_min</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::dt_min</qualifiedname>
+        <initializer>= 1.0_fp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="43" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1af4296cb3278247df9f43610df73ce84c" prot="public" static="no" mutable="no">
+        <type>real(fp)</type>
+        <definition>real(fp) gaschemcommon_mod::gaschemconfig::dt_max</definition>
+        <argsstring></argsstring>
+        <name>dt_max</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::dt_max</qualifiedname>
+        <initializer>= 3600.0_fp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="44" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1ab9c9cf14094a76a3a55edb60048cd239" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer gaschemcommon_mod::gaschemconfig::n_species</definition>
+        <argsstring></argsstring>
+        <name>n_species</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::n_species</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="47" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1ae7fa0aad95a5008cf56f1be0cd2c3aed" prot="public" static="no" mutable="no">
+        <type>character(len=32), dimension(:), allocatable</type>
+        <definition>character(len=32), dimension(:), allocatable gaschemcommon_mod::gaschemconfig::species_names</definition>
+        <argsstring></argsstring>
+        <name>species_names</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::species_names</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="48" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a9fce9affbbcd4b2c6d85a92dd974f0e9" prot="public" static="no" mutable="no">
+        <type>integer, dimension(:), allocatable</type>
+        <definition>integer, dimension(:), allocatable gaschemcommon_mod::gaschemconfig::species_indices</definition>
+        <argsstring></argsstring>
+        <name>species_indices</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::species_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="49" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a26ae4af402614426cea20b0ca6b53457" prot="public" static="no" mutable="no">
+        <type>logical</type>
+        <definition>logical gaschemcommon_mod::gaschemconfig::output_diagnostics</definition>
+        <argsstring></argsstring>
+        <name>output_diagnostics</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::output_diagnostics</qualifiedname>
+        <initializer>= .true.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="55" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgaschemcommon__mod_1_1gaschemconfig_1a66ef9a7ecf367239f7e0cfc41c8cd4cb" prot="public" static="no" mutable="no">
+        <type>real(fp)</type>
+        <definition>real(fp) gaschemcommon_mod::gaschemconfig::diagnostic_frequency</definition>
+        <argsstring></argsstring>
+        <name>diagnostic_frequency</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::diagnostic_frequency</qualifiedname>
+        <initializer>= 3600.0_fp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="56" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="56" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemconfig_1ad0c221e9dc0d87ca6bc6cde403b7b03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemconfig::validate</definition>
+        <argsstring>(this, error_handler)</argsstring>
+        <name>validate</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::validate</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemconfig" kindref="compound">gaschemconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structerror__mod_1_1errormanagertype" kindref="compound">errormanagertype</ref>), intent(inout)</type>
+          <defname>error_handler</defname>
+        </param>
+        <briefdescription>
+<para>Validate GasChem configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="59" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemconfig_1a8991840f78b7e26397207eeba518b96b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemconfig::finalize</definition>
+        <argsstring>(this)</argsstring>
+        <name>finalize</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::finalize</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemconfig" kindref="compound">gaschemconfig</ref>), intent(inout)</type>
+          <defname>this</defname>
+        </param>
+        <briefdescription>
+<para>Finalize GasChem configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="60" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgaschemcommon__mod_1_1gaschemconfig_1a9badde53a93c8f1adab83c8f090fd93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>procedure, public</type>
+        <definition>procedure, public gaschemcommon_mod::gaschemconfig::print_summary</definition>
+        <argsstring>(this)</argsstring>
+        <name>print_summary</name>
+        <qualifiedname>gaschemcommon_mod::gaschemconfig::print_summary</qualifiedname>
+        <param>
+          <type>class(<ref refid="structgaschemcommon__mod_1_1gaschemconfig" kindref="compound">gaschemconfig</ref>), intent(in)</type>
+          <defname>this</defname>
+        </param>
+        <briefdescription>
+<para>Print configuration summary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="61" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Main configuration type for GasChem process. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/process/GasChem/GasChemCommon_Mod.F90" line="32" column="1" bodyfile="src/process/GasChem/GasChemCommon_Mod.F90" bodystart="32" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a66ef9a7ecf367239f7e0cfc41c8cd4cb" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>diagnostic_frequency</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1afd5576a682cd3c98022a6581f4f09138" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>diagnostic_species</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1aafbb254124369ca4bbc87530a3bdefa7" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>diagnostic_species_id</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a1a990e0cbbc6136401d71521ded445ec" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>diagnostics</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1af4296cb3278247df9f43610df73ce84c" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>dt_max</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a7d79f4f3152c4a0663e4039d59230c52" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>dt_min</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a8991840f78b7e26397207eeba518b96b" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>finalize</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ac754ae3fb74fa7f31075a6dd4913a677" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>is_active</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a08b4bb5209e53b270b44a0ef1123fa55" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>n_diagnostic_species</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ab9c9cf14094a76a3a55edb60048cd239" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>n_species</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a26ae4af402614426cea20b0ca6b53457" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>output_diagnostics</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a9badde53a93c8f1adab83c8f090fd93d" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>print_summary</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a63009fdcd1002333e7f66b92ba060b65" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>scheme</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1a9fce9affbbcd4b2c6d85a92dd974f0e9" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>species_indices</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ae7fa0aad95a5008cf56f1be0cd2c3aed" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>species_names</name></member>
+      <member refid="structgaschemcommon__mod_1_1gaschemconfig_1ad0c221e9dc0d87ca6bc6cde403b7b03f" prot="public" virt="non-virtual"><scope>gaschemcommon_mod::gaschemconfig</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

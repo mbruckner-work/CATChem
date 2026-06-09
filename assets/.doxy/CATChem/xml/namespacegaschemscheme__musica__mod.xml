@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacegaschemscheme__musica__mod" kind="namespace" language="Fortran">
+    <compoundname>gaschemscheme_musica_mod</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegaschemscheme__musica__mod_1af4dc8e963cdb27df3d52a31b52402114" prot="private" static="no" mutable="no">
+        <type>real(fp), parameter</type>
+        <definition>real(fp), parameter gaschemscheme_musica_mod::t_standard</definition>
+        <argsstring></argsstring>
+        <name>t_standard</name>
+        <qualifiedname>gaschemscheme_musica_mod::t_standard</qualifiedname>
+        <initializer>= 303.15_fp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" line="41" column="1" bodyfile="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegaschemscheme__musica__mod_1a4a8f2b43524d5f8e5968f72943c3908c" prot="private" static="no" mutable="no">
+        <type>real(fp), parameter</type>
+        <definition>real(fp), parameter gaschemscheme_musica_mod::default_scaling</definition>
+        <argsstring></argsstring>
+        <name>default_scaling</name>
+        <qualifiedname>gaschemscheme_musica_mod::default_scaling</qualifiedname>
+        <initializer>= 1.0e-9_fp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" line="42" column="1" bodyfile="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegaschemscheme__musica__mod_1ac76bef9734fe3dd23011f4abcbe7198f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>impure subroutine, public</type>
+        <definition>impure subroutine, public gaschemscheme_musica_mod::compute_no_phot</definition>
+        <argsstring>(num_layers, num_species, params, airden, delp, pmid, t, species_conc, species_tendencies, total_rate_per_species_per_level, net_chemical_rate_per_species, diagnostic_species_id)</argsstring>
+        <name>compute_no_phot</name>
+        <qualifiedname>gaschemscheme_musica_mod::compute_no_phot</qualifiedname>
+        <param>
+          <type>integer, intent(in)</type>
+          <defname>num_layers</defname>
+        </param>
+        <param>
+          <type>integer, intent(in)</type>
+          <defname>num_species</defname>
+        </param>
+        <param>
+          <type>type(<ref refid="structgaschemcommon__mod_1_1gaschemschememusicaconfig" kindref="compound">gaschemschememusicaconfig</ref>), intent(in)</type>
+          <defname>params</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers), intent(in)</type>
+          <defname>airden</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers), intent(in)</type>
+          <defname>delp</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers), intent(in)</type>
+          <defname>pmid</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers), intent(in)</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers, num_species), intent(in)</type>
+          <defname>species_conc</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(num_layers, num_species), intent(inout)</type>
+          <defname>species_tendencies</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(:,:), intent(inout), optional</type>
+          <defname>total_rate_per_species_per_level</defname>
+        </param>
+        <param>
+          <type>real(fp), dimension(:), intent(inout), optional</type>
+          <defname>net_chemical_rate_per_species</defname>
+        </param>
+        <param>
+          <type>integer, dimension(:), intent(in), optional</type>
+          <defname>diagnostic_species_id</defname>
+        </param>
+        <briefdescription>
+<para>Pure science computation for no_phot scheme. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a pure computational kernel implementing MICM gas phase chemistry solver without photolysis. NO error checking, validation, or infrastructure concerns. Host model must ensure all inputs are valid before calling.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertical layers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of chemical species </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheme parameters (pre-validated by host) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">airden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AIRDEN field [appropriate units] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">delp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DELP field [appropriate units] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pmid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PMID field [appropriate units] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>T field [appropriate units] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">species_conc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Species concentrations [ppm or ug/kg] (num_layers, num_species) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">species_tendencies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Species tendency terms [mol/mol/s] (num_layers, num_species) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">total_rate_per_species_per_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Net chemical change per species per level [molecules/cm3/s] (num_layers, num_species) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">net_chemical_rate_per_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Net chem rate [molecules/cm3/s] (num_species) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">diagnostic_species_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indices mapping diagnostic species to species array (optional, for per-species diagnostics) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" line="64" column="1" bodyfile="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" bodystart="78" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/process/GasChem/schemes/GasChemScheme_MUSICA_Mod.F90" line="23" column="1"/>
+  </compounddef>
+</doxygen>

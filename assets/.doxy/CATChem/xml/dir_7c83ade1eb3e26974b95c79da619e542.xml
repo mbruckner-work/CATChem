@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7c83ade1eb3e26974b95c79da619e542" kind="dir">
+    <compoundname>src/process/GasChem/schemes</compoundname>
+    <innerfile refid="_gas_chem_scheme___m_u_s_i_c_a___mod_8_f90">GasChemScheme_MUSICA_Mod.F90</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/process/GasChem/schemes/"/>
+  </compounddef>
+</doxygen>

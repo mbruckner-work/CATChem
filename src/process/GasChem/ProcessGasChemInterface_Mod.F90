@@ -37,7 +37,7 @@ module ProcessGasChemInterface_Mod
 
    ! Common utilities - unified configuration
    use GasChemCommon_Mod, only: GasChemProcessConfig
-   use musica_micm, only: micm_t, RosenbrockStandardOrder
+   use musica_micm, only: micm_t, RosenbrockStandardOrder, rosenbrock_solver_parameters_t
    use musica_state, only: state_t
    use musica_util, only: error_t, string_t
 
@@ -127,6 +127,7 @@ contains
 
       type(ErrorManagerType), pointer :: error_manager
       type(string_t) :: tmp_string
+      type(rosenbrock_solver_parameters_t) :: micm_params
       character(len=512) :: err_msg
 
       rc = CC_SUCCESS
@@ -191,6 +192,14 @@ contains
          rc = CC_FAILURE
          return
       end if
+
+      ! Set relative tolerance
+      micm_params%relative_tolerance = 0.5e-3_fp
+      micm_params%h_min = 1.0e-10_fp
+      micm_params%h_max = 100.0_fp
+      micm_params%h_start = 1.0e-5_fp
+      micm_params%max_number_of_steps = 500
+      call this%micm%set_rosenbrock_solver_parameters(micm_params, micm_error)
 
       ! Create a state sized to the model vertical dimension (nz)
       this%micm_state => this%micm%get_state(nz, micm_error)

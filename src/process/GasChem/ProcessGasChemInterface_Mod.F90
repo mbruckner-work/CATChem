@@ -194,11 +194,11 @@ contains
       end if
 
       ! Set relative tolerance
-      micm_params%relative_tolerance = 0.5e-3_fp
-      micm_params%h_min = 1.0e-10_fp
-      micm_params%h_max = 100.0_fp
+      micm_params%relative_tolerance = 0.5e-2_fp
+      micm_params%h_min = 0_fp
+      micm_params%h_max = 60_fp
       micm_params%h_start = 1.0e-5_fp
-      micm_params%max_number_of_steps = 500
+      micm_params%max_number_of_steps = 100000
       call this%micm%set_rosenbrock_solver_parameters(micm_params, micm_error)
 
       ! Create a state sized to the model vertical dimension (nz)

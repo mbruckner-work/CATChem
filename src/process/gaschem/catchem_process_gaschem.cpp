@@ -198,9 +198,12 @@ namespace catchem {
                     if (it != variable_map.end()) {
                         size_t i_micm_spec = it->second;
                         double ppmv_val = conc(icol, ilev, ispec);
-                        if (!std::isfinite(ppmv_val) || ppmv_val < 0.0)
-                            throw std::domain_error("GasChem received a negative or non-finite concentration for " +
-                                                    name);
+                        if (!std::isfinite(ppmv_val) || ppmv_val < 0.0) {
+                            throw std::domain_error(
+                                std::string("GasChem received a negative or non-finite concentration (") + 
+                                std::to_string(ppmv_val) + ") for " + name
+                            );
+                        }
 
                         double conc_molar = ppmv_val * 1.0e-6 * air_density_mol;
                         if (name == "o2") {

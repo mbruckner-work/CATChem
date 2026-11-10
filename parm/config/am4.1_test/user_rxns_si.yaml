@@ -1,0 +1,338 @@
+- A: 217.59707599952029
+  B: -2.4
+  C: 300
+  gas phase: gas
+  name: uo_o2 (1)
+  products:
+  - species name: o3
+  - species name: M
+  reactants:
+  - species name: o
+  - species name: o2
+  - species name: M
+  type: ARRHENIUS
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 2502.366373994483
+  k0_B: -2.1
+  kinf_A: 662435.4835999999
+  kinf_B: -1.3
+  products:
+  - species name: h
+  - species name: co2
+  reactants:
+  - species name: oh
+  - species name: co
+  type: TROE
+- A: 23004577.7032
+  C: -20000
+  gas phase: gas
+  name: uoh_acet (1)
+  products:
+  - species name: ato2
+  - species name: h2o
+  reactants:
+  - species name: ch3coch3
+  - species name: oh
+  type: ARRHENIUS
+- A: 80094.47210799999
+  gas phase: gas
+  name: uoh_acet (2)
+  products:
+  - species name: ato2
+  - species name: h2o
+  reactants:
+  - species name: ch3coch3
+  - species name: oh
+  type: ARRHENIUS
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 446120187500800.0
+  k0_B: -4.4
+  k0_C: -11000
+  kinf_A: 518560000000000.0
+  kinf_B: -0.7
+  kinf_C: -11000
+  products:
+  - species name: no2
+  - species name: no3
+  reactants:
+  - species name: n2o5
+  type: TROE
+- A: 14453.137824
+  C: 460
+  gas phase: gas
+  name: uoh_hno3 (1) (1)
+  products:
+  - species name: no3
+  - species name: h2o
+  reactants:
+  - species name: hno3
+  - species name: oh
+  type: ARRHENIUS
+- Fc: 1
+  gas phase: gas
+  k0_A: 235.73016566614695
+  k0_C: 1335
+  kinf_A: 16.259780052
+  kinf_C: 2199
+  products:
+  - species name: no3
+  - species name: h2o
+  reactants:
+  - species name: hno3
+  - species name: oh
+  type: TROE
+- A: 210774.9266
+  C: 430
+  gas phase: gas
+  name: uho2_ho2 (1)(1)
+  products:
+  - species name: h2o2
+  - species name: o2
+  reactants:
+  - coefficient: 2
+    species name: ho2
+  type: ARRHENIUS
+- A: 761.5897659983209
+  C: 920
+  gas phase: gas
+  name: uho2_ho2 (1)(2)
+  products:
+  - species name: h2o2
+  - species name: o2
+  - species name: M
+  reactants:
+  - coefficient: 2
+    species name: ho2
+  - species name: M
+  type: ARRHENIUS
+- A: 177.70427873294153
+  C: 2630
+  gas phase: gas
+  name: uho2_ho2 (1)(3)
+  products:
+  - species name: h2o2
+  - species name: o2
+  - species name: h2o
+  reactants:
+  - coefficient: 2
+    species name: ho2
+  - species name: h2o
+  type: ARRHENIUS
+- A: 0.5197920875179664
+  C: 3200
+  gas phase: gas
+  name: uho2_ho2 (1)(4)
+  products:
+  - species name: h2o2
+  - species name: o2
+  - species name: M
+  - species name: h2o
+  reactants:
+  - coefficient: 2
+    species name: ho2
+  - species name: M
+  - species name: h2o
+  type: ARRHENIUS
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 252929911920000.0
+  k0_B: -3.4
+  k0_C: -10900
+  kinf_A: 6090000000000000.0
+  kinf_B: -1.2
+  kinf_C: -10900
+  products:
+  - species name: ho2
+  - species name: no2
+  reactants:
+  - species name: ho2no2
+  type: TROE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 0.3
+    species name: hno3
+  gas-phase species: n2o5
+  name: n2o5h (1)
+  reaction probability: 0.02
+  type: SURFACE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 1
+    species name: nh4
+  gas-phase species: nh3
+  name: nh3h (1)
+  reaction probability: 0
+  type: SURFACE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 1
+    species name: hno3
+  gas-phase species: no3
+  name: no3h (1)
+  reaction probability: 0.02
+  type: SURFACE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 0.3
+    species name: h2o
+  gas-phase species: ho2
+  name: ho2h (1)
+  reaction probability: 0.2
+  type: SURFACE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 0.5
+    species name: hno3
+  - coefficient: 0.5
+    species name: oh
+  - coefficient: 0.5
+    species name: 'no'
+  gas-phase species: no2
+  name: no2h (1)
+  reaction probability: 1e-5
+  type: SURFACE
+- gas phase: gas
+  gas-phase products:
+  - coefficient: 1
+    species name: so4
+  gas-phase species: so2
+  name: so2h (1)
+  reaction probability: 2e-5
+  type: SURFACE
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 10358082107200.0
+  k0_B: -4.5
+  k0_C: -8835
+  kinf_A: 2150000000000000.0
+  kinf_B: -2.4
+  kinf_C: -8835
+  products:
+  - coefficient: 2
+    species name: clo
+  reactants:
+  - species name: cl2o2
+  type: TROE
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 6.4898804328292e+17
+  k0_B: -5.6
+  k0_C: -14000
+  kinf_A: 1.0332299999999998e+17
+  kinf_B: -1.5
+  kinf_C: -14000
+  products:
+  - species name: ch3co3
+  - species name: no2
+  reactants:
+  - species name: pan
+  type: TROE
+- Fc: 0.6
+  gas phase: gas
+  k0_A: 6.021538545924001e+18
+  k0_B: -8.9
+  k0_C: -14000
+  kinf_A: 8.5547e+16
+  kinf_B: -0.2
+  kinf_C: -14000
+  products:
+  - species name: mao3
+  - species name: no2
+  reactants:
+  - species name: mpan
+  type: TROE
+- gas phase: gas
+  name: usr_DMS_OH
+  products:
+  - coefficient: 0.75
+    species name: so2
+  - species name: ch2o
+  reactants:
+  - species name: dms
+  - species name: oh
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat72
+  products:
+  - species name: h2o
+  - species name: cl2
+  reactants:
+  - species name: hocl
+  - species name: hcl
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat73
+  products:
+  - species name: hno3
+  - species name: cl
+  - species name: no2
+  reactants:
+  - species name: n2o5
+  - species name: hcl
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat74
+  products:
+  - coefficient: 2
+    species name: hno3
+  reactants:
+  - species name: n2o5
+  - species name: h2o
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat75
+  products:
+  - species name: hocl
+  - species name: hno3
+  reactants:
+  - species name: clono2
+  - species name: h2o
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat76
+  products:
+  - species name: cl2
+  - species name: hno3
+  reactants:
+  - species name: clono2
+  - species name: hcl
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat77
+  products:
+  - species name: brcl
+  - species name: h2o
+  reactants:
+  - species name: hobr
+  - species name: hcl
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat78
+  products:
+  - species name: brcl
+  - species name: h2o
+  reactants:
+  - species name: hocl
+  - species name: hbr
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat79
+  products:
+  - coefficient: 2
+    species name: br
+  - species name: hno3
+  reactants:
+  - species name: hobr
+  - species name: hbr
+  type: USER_DEFINED
+- gas phase: gas
+  name: strat80
+  products:
+  - species name: hobr
+  - species name: hno3
+  reactants:
+  - species name: brono2
+  - species name: h2o
+  type: USER_DEFINED

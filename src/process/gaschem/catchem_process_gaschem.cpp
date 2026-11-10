@@ -80,19 +80,33 @@ namespace catchem {
 
         // 2. Initialize MICM and State using musica library
         try {
-            micm_instance_ = std::make_unique<musica::MICM>(micm_config_path, musica::RosenbrockStandardOrder);
+            rosenbrock_params_.relative_tolerance = 0.5e-2;
+            rosenbrock_params_.h_min = 0;
+            rosenbrock_params_.h_max = 60;
+            rosenbrock_params_.h_start = 1.0e-5;
+            rosenbrock_params_.max_number_of_steps = 100000;
+            micm_instance_ = std::make_unique<musica::MICM>(micm_config_path, musica::RosenbrockStandardOrder,rosenbrock_params_);
             micm_state_ =
                 std::make_unique<musica::State>(*micm_instance_, state->column_count() * state->level_count());
             initialized_ = true;
             std::clog << "[INFO] GasChemProcess: initialized MICM successfully!" << std::endl;
 
             // Validate that all active CATChem species are mapped inside the MICM solver
+            // MEB: ran into some case related issues. Intention is for MICM to use same species yaml as CATChem, 
+            // so convention will be same. Currently is lowercase because of UFS field and diag tables. 
             auto variable_map = micm_state_->GetVariableMap();
             for (int ispec = 0; ispec < state->species_count(); ++ispec) {
                 std::string name = state->chemistry().species_list[ispec].short_name;
-                for (auto& c : name)
-                    c = std::toupper(c);
-                if (variable_map.find(name) == variable_map.end()) {
+                std::string lowercase_name = name;
+                std::transform(lowercase_name.begin(), lowercase_name.end(), lowercase_name.begin(), [](unsigned char c) { 
+                    return std::tolower(c);
+                });
+
+                 bool found_in_micm = (variable_map.find(lowercase_name) != variable_map.end()) || 
+                                 (variable_map.find(name) != variable_map.end());
+
+                if (!found_in_micm) {
+                    // If it's an aerosol/dust/sea-salt type, it might deliberately not be in the Gas-Chem MICM solver
                     Logger::warn(*state, "Active species not found in MICM solver variable map", {{"species", name}});
                 }
             }
@@ -119,17 +133,19 @@ namespace catchem {
         }
 
         const auto import_generation = state->current_import_generation();
-        if (!state->meteorology().T || !state->meteorology().PMID || !state->meteorology().AIRDEN_DRY ||
+        if (!state->meteorology().T || !state->meteorology().PMID || !state->meteorology().AIRDEN_DRY || !state->meteorology().QV ||
             !state->meteorology().T->is_current(import_generation) ||
             !state->meteorology().PMID->is_current(import_generation) ||
-            !state->meteorology().AIRDEN_DRY->is_current(import_generation) || !state->chemistry().conc) {
+            !state->meteorology().AIRDEN_DRY->is_current(import_generation) || 
+            !state->meteorology().QV->is_current(import_generation) || !state->chemistry().conc) {
             throw std::runtime_error(
-                "GasChem requires current T, PMID, AIRDEN_DRY, and chemistry concentration fields");
+                "GasChem requires current T, PMID, AIRDEN_DRY, QV, and chemistry concentration fields");
         }
 
         auto temp = state->meteorology().T->host_view;
         auto pmid = state->meteorology().PMID->host_view;
         auto airden_dry = state->meteorology().AIRDEN_DRY->host_view;
+        auto qv = state->meteorology().QV->host_view;
         state->chemistry().conc->host_write();
         auto conc = state->chemistry().conc->host_view;
 
@@ -158,6 +174,7 @@ namespace catchem {
 
                 double t_val = temp(icol, ilev, 0);
                 double p_val = pmid(icol, ilev, 0);
+                double qv_val = qv(icol, ilev, 0);
                 double density_dry_kg = airden_dry(icol, ilev, 0);
 
                 if (!std::isfinite(t_val) || t_val <= 0.0 || !std::isfinite(p_val) || p_val <= 0.0 ||
@@ -175,7 +192,7 @@ namespace catchem {
                 for (int ispec = 0; ispec < ns; ++ispec) {
                     std::string name = state->chemistry().species_list[ispec].short_name;
                     for (auto& c : name)
-                        c = std::toupper(c);
+                        c = std::tolower(c);
 
                     auto it = variable_map.find(name);
                     if (it != variable_map.end()) {
@@ -186,7 +203,13 @@ namespace catchem {
                                                     name);
 
                         double conc_molar = ppmv_val * 1.0e-6 * air_density_mol;
-
+                        if (name == "o2") {
+                            conc_molar = 0.20946 * air_density_mol;
+                        } else if (name == "n2") {
+                            conc_molar = 0.78084 * air_density_mol;
+                        } else if (name == "h2o") {
+                            conc_molar = (qv_val * density_dry_kg) / 0.0180153 ;
+                        }
                         size_t group_index = i_cell / vector_size_;
                         size_t row_in_group = i_cell % vector_size_;
                         size_t idx = (group_index * n_micm_species + i_micm_spec) * vector_size_ + row_in_group;
@@ -245,7 +268,7 @@ namespace catchem {
                 for (int ispec = 0; ispec < ns; ++ispec) {
                     std::string name = state->chemistry().species_list[ispec].short_name;
                     for (auto& c : name)
-                        c = std::toupper(c);
+                        c = std::tolower(c);
 
                     auto it = variable_map.find(name);
                     if (it != variable_map.end()) {

@@ -15,6 +15,7 @@ namespace catchem {
         // takes precedence over config_dir and is passed directly to MICM.
         std::string config_file_;
         std::unique_ptr<musica::MICM> micm_instance_;
+        musica::RosenbrockSolverParameters rosenbrock_params_;
         std::unique_ptr<musica::State> micm_state_;
         bool initialized_ = false;
 

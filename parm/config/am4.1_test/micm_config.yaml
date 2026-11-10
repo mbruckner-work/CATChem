@@ -1,0 +1,12 @@
+version: "1.1.0"
+name: AM4.1
+species:
+  files:
+    - /scratch3/BMC/rcm2/mbruckner/catchem_c/global-workflow/parm/chem/catchem/CATChem_species_gcafs_aero.yaml
+reactions:
+  files:
+    - /scratch3/BMC/rcm2/mbruckner/catchem_c/global-workflow/parm/chem/catchem/reactions_si.yaml
+    - /scratch3/BMC/rcm2/mbruckner/catchem_c/global-workflow/parm/chem/catchem/user_rxns_si.yaml
+phases:
+  files:
+    - /scratch3/BMC/rcm2/mbruckner/catchem_c/global-workflow/parm/chem/catchem/phases.yaml

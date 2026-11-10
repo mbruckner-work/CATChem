@@ -1,0 +1,627 @@
+### CATChem_species.yml: CATChem Runtime Species Configuration
+###
+### NOTE: Add quotes around nitrogen oxide ('NO'), because YAML
+### parsers will confuse this with a negative "no" value.
+
+# species (gas dey dep set to false to test GOCART only for now):
+- name: M
+  is third body: True
+  __is_gas: true
+  __is_advected: false
+  __is_drydep: false
+  __is_wetdep: false
+- name: n2
+  __is_gas: true
+  __is_advected: false
+  molecular weight [kg mol-1]: 0.0280134
+- name: o2
+  __is_gas: true
+  __is_advected: false
+  molecular weight [kg mol-1]: 0.0319988
+- name: o3
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.04800
+- name: o
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0159994
+- name: o1d
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0159994
+- name: n2o
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0440129
+- name: n
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0140067
+- name: 'no'
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0300061
+- name: no2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0460055
+- name: hno3
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0630123
+- name: ho2no2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0790117
+- name: n2o5
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.10801
+- name: ch4
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0160406
+- name: ch3o2
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.047032
+- name: ch3ooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0480394
+- name: ch2o
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.030026
+- name: co
+  __is_gas: true   
+  molecular weight [kg mol-1]: 0.0280104
+- name: ho2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0330062
+- name: c3h6
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0420774
+- name: isop
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0681142
+- name: po2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.091083
+- name: ch3cho
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.044051
+- name: pooh
+  molecular weight [kg mol-1]: 0.0920904
+  __is_gas: true  
+- name: ch3co3
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0750424
+- name: ch3coooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0760498
+- name: pan
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.121048
+- name: c2h6
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0300664
+- name: c2h4
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0280516
+- name: c4h10
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.05812
+- name: mpan
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.147085
+- name: isopo2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.11712
+- name: mvk
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0700878
+- name: macr
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0700878
+- name: macro2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.119093
+- name: macrooh
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.120101
+- name: c2h5o2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0610578
+- name: c2h5ooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0620652
+- name: c10h16
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.13623
+- name: c3h8
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0440922
+- name: c3h7o2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0750836
+- name: c3h7ooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.076091
+- name: ch3coch3
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0580768
+- name: ch3oh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.03204
+- name: c2h5oh
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0460658
+- name: glyald
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0600504
+- name: hyac
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0740762
+- name: eo2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.077060
+- name: eo
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0610578
+- name: isopooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.118127
+- name: h2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0020148
+- name: nh3
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.017031
+- name: nh4no3
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.080043
+- name: nh4
+  molecular weight [kg mol-1]: 0.018039
+  __is_gas: true  
+- name: hcl
+  __is_gas: true   
+  molecular weight [kg mol-1]: 0.0364601
+- name: hocl
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0524595
+- name: clono2
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0974576
+- name: cl
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0354527
+- name: clo
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0514521
+- name: cl2o2
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.102904
+- name: cl2
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.0709054
+- name: hobr
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.0969108
+- name: hbr
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0809114
+- name: brono2
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.141909
+- name: br
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.079904
+- name: bro
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0959034
+- name: brcl
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.115357
+- name: lch4
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.01604
+- name: h
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0010074
+- name: h2o
+  __is_advected: false
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.0180142
+- name: roh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.06010
+- name: rcho
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.05808
+- name: isopnb
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.14713
+- name: isopnbo2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.19614
+- name: macrn
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.13308
+- name: mvkn
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.13308
+- name: r4n2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.11912
+- name: mek
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.07211
+- name: r4n1
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.10312
+- name: iepox
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.11813
+- name: iepoxoo
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.15112
+- name: glyx
+  __is_gas: true   
+  molecular weight [kg mol-1]: 0.05804
+- name: mgly
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.07206
+- name: mvko2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.10309
+- name: mvkooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.10408
+- name: macrno2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.16404
+- name: mao3
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.11707
+- name: maop
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.11808
+- name: maopo2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.13306
+- name: ato2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.08905
+- name: atooh
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.09006
+- name: ino2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.17810
+- name: inpn
+  __is_gas: true   
+  molecular weight [kg mol-1]: 0.17911
+- name: isnooa
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.19410
+- name: isn1
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.14713
+- name: o3s
+  __is_gas: true 
+  molecular weight [kg mol-1]: 0.04800
+- name: o3s_e90
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.04800
+- name: co2
+  __is_gas: true  
+  molecular weight [kg mol-1]: 0.04401
+- name: rcooh
+  __is_gas: true
+  molecular weight [kg mol-1]: 0.07408
+- name: so2
+  __description: Sulfur dioxide
+  __is_gas: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 1.0e+5
+  molecular weight [kg mol-1]: 64.04e-3
+  __dd_DvzAerSnow: 0.03
+  __dd_DvzMinVal_snow: 0.2
+  __dd_DvzMinVal_land: 0.3
+  __viscosity: 0.0 #dummy value
+  #This is Luo's scheme for SO2 but adopted here
+  __henry_k0: 1.22
+  __henry_cr: 3100.0
+  __wd_retfactor: 5.0e-2
+  __wd_LiqAndGas: true
+  __wd_convfacI2G: 6.17395e-1
+  __wd_rainouteff: [1.0, 0.0, 1.0]
+  __wd_reevap_frac: 1.0  #GOCART resuspends full re-evaporated fraction (GEOS-Chem/Luo default 0.5)
+- name: h2o2
+  __description: Hydrogen peroxide
+  __is_gas: true
+  __is_drydep: false   #turn off for now due to climatology reading from GOCART inputs.
+  __is_wetdep: true
+  __dd_f0: 1.0
+  __dd_hstar: 5.0e+7
+  molecular weight [kg mol-1]: 34.02e-3
+  __viscosity: 0.0 #dummy value
+  __henry_k0: 8.3e+4
+  __henry_cr: 7400.0
+  __wd_retfactor: 5.0e-2
+  __wd_LiqAndGas: true
+  __wd_convfacI2G: 4.36564e-1
+- name: oh
+  __description: Hydroxyl radical
+  __is_gas: true
+  molecular weight [kg mol-1]: 17.01e-3
+- name: no3
+  __description: Nitrate radical
+  __is_gas: true
+  __is_photolysis: true
+  molecular weight [kg mol-1]: 62.01e-3
+- name: so4       #This is to match CMAQ name to use the restart file. so4 is used in GEOS-Chem.
+  __description: sulfate
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 96.06e-3
+  __radius: 0.35
+  __density: 1700.0
+  __dd_DvzAerSnow: 0.03
+  __dd_DvzMinVal_snow: 0.01
+  __dd_DvzMinVal_land: 0.01
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __wd_rainouteff: [1.0, 0.0, 1.0]
+  __wd_reevap_frac: 1.0  #GOCART resuspends full re-evaporated fraction (GEOS-Chem/Luo default 0.5)
+  __mie_name: SU
+- name: dms
+  __description: Dimethyl sulfide
+  molecular weight [kg mol-1]: 62.13e-3
+  __radius: 0.0
+  __is_gas: true   #gocart treat it as a gas without dry and wet deposition
+  __is_dust: false
+  __is_aerosol: false
+  __is_drydep: false
+  __henry_k0: 0.48
+  __henry_cr: 3100.0
+  __mie_name: SU
+- name: dms_in
+  __description: Dimethyl sulfide in ocean water (climatology for emissions calculation)
+  __is_advected: false
+  molecular weight [kg mol-1]: 62.13e-3
+  __radius: 8.7e-2
+- name: msa
+  __description: methanesulphonic acid
+  __is_aerosol: true   #gocart treat it as a gas, but we treat it as aerosol
+  __is_drydep: true
+  __is_wetdep: true
+  __radius: 0.35
+  __density: 1700.0
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  __dd_DvzAerSnow: 0.03
+  __dd_DvzMinVal_snow: 0.01
+  __dd_DvzMinVal_land: 0.01
+  molecular weight [kg mol-1]: 96.10e-3
+  __wd_rainouteff: [1.0, 0.0, 1.0]
+  __mie_name: SU
+- name: bc1
+  __description: BC1
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 12.01e-3    #gocart is 180 g/mol but it seems not used in gocart processes. So we go with GC
+  __radius: 0.35   #gocart is 0.35; GC is 0.087
+  __density: 1800.0
+  __dd_DvzAerSnow: 0.03
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __wd_rainouteff: [0.0, 0.0, 0.0]
+  __t_chem_loss: -1.0  #Rate of chemical destruction of carbon species [days]; Note -1 (any negative value) means carbon loss is turned off by default.
+  __mie_name: BC
+- name: bc2
+  __description: BC2
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 12.01e-3    #gocart is 180 g/mol but it seems not used in gocart processes. So we go with GC
+  __radius: 0.35   #gocart is 0.35; GC is 0.087
+  __density: 1800.0
+  __dd_DvzAerSnow: 0.03
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __t_chem_loss: -1.0  #Rate of chemical destruction of carbon species [days]; Note -1 (any negative value) means carbon loss is turned off by default.
+  __mie_name: BC
+- name: oc1
+  __description: OC1
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 12.01e-3    #gocart is 180 g/mol but it seems not used in gocart processes. So we go with GC
+  __radius: 0.35   #gocart is 0.35; GC is 0.087
+  __density: 1800.0
+  __dd_DvzAerSnow: 0.03
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __wd_rainouteff: [0.0, 0.0, 0.0]
+  __t_chem_loss: -1.0  #Rate of chemical destruction of carbon species [days]; Note -1 (any negative value) means carbon loss is turned off by default.
+  __mie_name: OC
+- name: oc2
+  __description: OC2
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 12.01e-3    #gocart is 180 g/mol but it seems not used in gocart processes. So we go with GC
+  __radius: 0.35   #gocart is 0.35; GC is 0.087
+  __density: 1800.0
+  __dd_DvzAerSnow: 0.03
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __t_chem_loss: -1.0  #Rate of chemical destruction of carbon species [days]; Note -1 (any negative value) means carbon loss is turned off by default.
+  __mie_name: OC
+- name: dust1
+  __long_name: dust1
+  __description: dust1
+  __lower_radius: 0.1
+  __upper_radius: 1.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 29.00e-3
+  __radius: 0.73
+  __density: 2500.
+  __is_dust: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [0.8, 0.8, 0.8]
+  __mie_name: DU
+- name: dust2
+  __long_name: dust2
+  __description: dust2
+  __lower_radius: 1.0
+  __upper_radius: 1.8
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 29.00e-3
+  __radius: 1.4
+  __density: 2650.
+  __is_dust: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [0.8, 0.8, 0.8]
+  __mie_name: DU
+- name: dust3
+  __long_name: dust3
+  __description: dust3
+  __lower_radius: 1.8
+  __upper_radius: 3.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 29.00e-3
+  __radius: 2.4
+  __density: 2650.
+  __is_dust: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [0.8, 0.8, 0.8]
+  __mie_name: DU
+- name: dust4
+  __long_name: dust4
+  __description: dust4
+  __lower_radius: 3.0
+  __upper_radius: 6.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 29.00e-3
+  __radius: 4.5
+  __density: 2650.
+  __is_dust: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: DU
+- name: dust5
+  __long_name: dust5
+  __description: dust5
+  __lower_radius: 6.0
+  __upper_radius: 10.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 29.00e-3
+  __radius: 8.0
+  __density: 2650.
+  __is_dust: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: DU
+- name: seas1
+  __long_name: seas1
+  __description: seas1
+  __lower_radius: 0.03
+  __upper_radius: 0.1
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 31.40e-3  #GEOS-Chem is 31.40; gocart is 58 but it seems not used in gocart processes. So we go with GC
+  __radius: 0.079
+  __density: 2200.
+  __is_seasalt: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: SS
+- name: seas2
+  __long_name: seas2
+  __description: seas2
+  __lower_radius: 0.1
+  __upper_radius: 0.5
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 31.40e-3  #GEOS-Chem is 31.40; gocart is 58
+  __radius: 0.316
+  __density: 2200.
+  __is_seasalt: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: SS
+- name: seas3
+  __long_name: seas3
+  __description: seas3
+  __lower_radius: 0.5
+  __upper_radius: 1.5
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 31.40e-3  #GEOS-Chem is 31.40; gocart is 58
+  __radius: 1.119
+  __density: 2200.
+  __is_seasalt: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: SS
+- name: seas4
+  __long_name: seas4
+  __description: seas4
+  __lower_radius: 1.5
+  __upper_radius: 5.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 31.40e-3  #GEOS-Chem is 31.40; gocart is 58
+  __radius: 2.818
+  __density: 2200.
+  __is_seasalt: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: SS
+- name: seas5
+  __long_name: seas5
+  __description: seas5
+  __lower_radius: 5.0
+  __upper_radius: 10.0
+  __dd_f0: 0.0
+  __dd_hstar: 0.0
+  molecular weight [kg mol-1]: 31.40e-3  #GEOS-Chem is 31.40; gocart is 58
+  __radius: 7.772
+  __density: 2200.
+  __is_seasalt: true
+  __is_aerosol: true
+  __is_drydep: true
+  __is_wetdep: true
+  __wd_rainouteff: [1.0, 1.0, 1.0]
+  __mie_name: SS

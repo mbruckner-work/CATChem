@@ -16,6 +16,9 @@ namespace catchem {
         std::string config_file_;
         std::unique_ptr<musica::MICM> micm_instance_;
         std::unique_ptr<musica::State> micm_state_;
+        musica::RosenbrockSolverParameters rosenbrock_params_;
+        std::vector<std::unique_ptr<musica::State>> thread_states_;
+        size_t cells_per_thread_{0};
         bool initialized_ = false;
 
     public:
